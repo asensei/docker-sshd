@@ -3,7 +3,11 @@
 # generate host keys if not present
 ssh-keygen -A
 
-# fix permissions, if writable
+# copy authorized_keys if present
+[ -n "${AUTHORIZED_KEYS}" ] \
+  && cp ${AUTHORIZED_KEYS} ~/.ssh/authorized_keys
+
+# fix permissions if writable
 [ -w ~/.ssh/authorized_keys ] \
     && chown root:root ~/.ssh/authorized_keys \
     && chmod 600 ~/.ssh/authorized_keys;
