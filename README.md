@@ -11,6 +11,7 @@ Server listening on 0.0.0.0 port 22.
 Server listening on :: port 22.
 
 $ ssh username@localhost -p 1080
+...
 ```
 
 Any arguments are passed to `sshd`. For example, to enable debug output:
