@@ -23,7 +23,7 @@ $ docker run --rm --publish=1080:22 asensei/docker-sshd -o LogLevel=DEBUG
 
 #### Use authorized keys
 
-In order to use your SSH key, simply mount them to:
+In order to use your SSH keys, simply mount them to:
 ```
 /root/.ssh/authorized_keys
 ```
