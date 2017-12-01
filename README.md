@@ -14,7 +14,7 @@ $ ssh username@localhost -p 1080
 ...
 ```
 
-Any arguments are passed to `sshd`. For example, to enable debug output:
+Arguments are passed to `sshd`. For example, to enable debug output:
 
 ```bash
 $ docker run --rm --publish=1080:22 asensei/docker-sshd -o LogLevel=DEBUG
