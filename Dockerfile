@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.7
 
 RUN apk --update add openssh
 RUN sed -i s/#PermitRootLogin.*/PermitRootLogin\ yes/ /etc/ssh/sshd_config
